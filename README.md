@@ -1,2 +1,2 @@
 # chatterbones
-A skeliton that can talk
+A skeleton that can talk
