@@ -101,7 +101,6 @@ def evaluate(encoder, decoder, searcher, voc, sentence, max_length=MAX_LENGTH):
     return decoded_words
 
 def evaluateInput(encoder, decoder, searcher, voc):
-    input_sentence = ''
     while True:
         try:
             # Get input sentence
@@ -121,8 +120,6 @@ def evaluateInput(encoder, decoder, searcher, voc):
 
 
 voc, pairs = read_vocab()
-print(f"There are {voc.num_words} words")
-
 checkpoint_iter = 10000
 checkpoints_dir = ''
 hidden_size = 500

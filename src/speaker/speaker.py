@@ -1,8 +1,7 @@
-import pyttsx3
+import os
+import datetime
 
-engine = pyttsx3.init()
-voices = engine.getProperty('voices')
-for voice in voices:
-   engine.setProperty('voice', voice.id)
-   engine.say('The quick brown fox jumped over the lazy dog.')
-engine.runAndWait()
+def tts(text):
+      return os.system(text)
+
+tts("espeak-ng  'I am a test statement to try some voices'")
