@@ -7,7 +7,7 @@ do
   if [ "$previous" != "$content" ];then
       echo "Sending data now"
       echo "Sending the text: $(echo "$content" | tr '[:upper:]' '[:lower:]')"
-      scp -i /home/pi/Documents/ssh/ChatterConnect.pem /home/pi/Desktop/ChatterBones/said.txt ec2-user@ec2-35-175-223-75.compute-1.amazonaws.com:
-  fi
+      scp -i /home/pi/Documents/ssh/ChatterConnect.pem /home/pi/Desktop/ChatterBones/said.txt ec2-user@ec2-35-175-223-75.compute-1.amazonaws.com:~/environment/chatterbones/src/chat
+fi
   previous="$content"
 done
