@@ -53,12 +53,13 @@ def wav_to_text(audio_file, TXT_FILENAME='said.txt'):
 
 
 wav_name = 'voice.wav' # this is the same as the default
-txt_name = 'said.txt' # this is the same as the default
-recording_time = 5 # change this number to change the length of recordings
+txt_name = '/Users/riley/Desktop/said.txt' # this is the same as the default
+recording_time = 10 # change this number to change the length of recordings
 
 while(1):
     try:
         record_audio(RECORD_SECONDS=recording_time, WAVE_OUTPUT_FILENAME=wav_name)
+        print('audio recorded')
         wav_to_text(wav_name,TXT_FILENAME=txt_name)
 
     except sr.RequestError as e:

@@ -7,9 +7,7 @@ import os
 # https://gtts.readthedocs.io/en/latest/module.html#localized-accents
 def tts(text, LANG="en", TLD='us', TTS_FILENAME='tts.mp3'):
     try:
-        # tts = gTTS(text=text, lang=LANG, tld=TLD)
-        tts = gTTS(text=text, lang=LANG)
-
+        tts = gTTS(text=text, lang=LANG, tld=TLD)
         tts.save(TTS_FILENAME)
         playsound.playsound(TTS_FILENAME)
 
