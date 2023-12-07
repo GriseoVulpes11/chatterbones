@@ -16,7 +16,9 @@ then send the text to the AWS server
 
 ## AWS 
 
-To be written by jack IDK man
+The model is hosted in an EC2 Instance on AWS, and the .tar and data is in an S3 bucket. The Raspberry Pi SCP a text file to the EC2 instance and, 
+when the text file is updated, the string within is sent through the model. Once the model outputs a response, it writes the response to a 
+text while where a seperate program grabs the data, and puts it ona flask frontend to be queried by the tts program. 
 
 ## Model
 
